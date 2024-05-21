@@ -1,0 +1,50 @@
+Olá pessoal/professor,
+
+Para visualizar nosso projeto, por favor, realize o download do arquivo arquivo_projeto.zip.
+
+Para a autenticação do usuário funcionar, é necessário criar um banco de dados com os seguintes critérios:
+
+1 - Configuração do Servidor.
+
+Host: localhost
+Usuário: root
+Senha: (deixe em branco)
+
+2 - Criação do Banco de Dados e Tabela.
+
+-- a) Criação do banco de dados
+CREATE DATABASE sangue_solidario;
+
+-- b) Seleção do banco de dados
+USE sangue_solidario;
+
+-- c) Criação da tabela
+CREATE TABLE sistema_doadores (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario VARCHAR(50),
+    senha VARCHAR(50),
+    nome_completo VARCHAR(100),
+    tipo_sanguineo CHAR(2),
+    genero CHAR(1),
+    idade INT,
+    status VARCHAR(20),
+    estado_civil VARCHAR(20),
+    telefone VARCHAR(15),
+    email VARCHAR(100),
+    observacao TEXT
+);
+
+-- d) Inserção dos dados na tabela
+INSERT INTO sistema_doadores (usuario, senha, nome_completo, tipo_sanguineo, genero, idade, status, estado_civil, telefone, email, observacao) VALUES
+('olviapalito', '12345', 'Aldair Reis', 'B', 'F', 28, 'ativo', 'Casado(a)', '11945678901', 'joana@example.com', 'Observação importante'),
+('usuario5', 'senha5', 'Pedro Oliveira', 'O', 'M', 32, 'ativo', 'Divorciado(a)', '11956789012', 'pedro@example.com', 'Observação urgente'),
+('usuario6', 'senha6', 'Mariana Santos', 'A', 'F', 27, 'ativo', 'Viúvo(a)', '11967890123', 'mariana@example.com', 'Observação relevante'),
+('usuario7', 'senha7', 'Lucas Lima', 'AB', 'M', 35, 'ativo', 'Solteiro(a)', '11978901234', 'lucas@example.com', 'Observação necessária'),
+('usuario8', 'senha8', 'Carolina Fernandes', 'O', 'F', 29, 'ativo', 'União Estável', '11989012345', 'carolina@example.com', 'Nenhuma observação'),
+('usuario9', 'senha9', 'Gabriel Oliveira', 'A', 'M', 33, 'ativo', 'Casado(a)', '11990123456', 'gabriel@example.com', 'Observação importante'),
+('usuario10', 'senha10', 'Isabela Costa', 'AB', 'F', 31, 'ativo', 'Divorciado(a)', '11901234567', 'isabela@example.com', 'Observação urgente'),
+('usuario11', 'senha11', 'Fernando Santos', 'O', 'M', 36, 'ativo', 'Solteiro(a)', '11912345678', 'fernando@example.com', 'Observação necessária'),
+('usuario12', 'senha12', 'Amanda Lima', 'A', 'F', 30, 'ativo', 'Viúvo(a)', '11923456789', 'amanda@example.com', 'Observação relevante');
+
+
+
