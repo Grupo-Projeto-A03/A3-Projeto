@@ -1,21 +1,37 @@
 Projeto Sangue Solidário 🩸
+
 Resumo do Projeto
-O Projeto Sangue Solidário é um aplicativo que interliga doadores de sangue com hospitais cadastrados, facilitando o agendamento de doações. O sistema é administrado por usuários com permissão de acesso, que podem cadastrar novos doadores e agendar doações online.
+
+o Projeto Sangue Solidário é um aplicativo revolucionário que une doadores de sangue a hospitais cadastrados, simplificando o processo de agendamento de doações. 
+Administrado por usuários autorizados, o sistema permite o cadastro de novos doadores e a marcação de doações online.
 
 Funcionalidades Principais
-Autenticação de Usuário: LoginTelaView - Autentica usuários no sistema.
-Menu Principal: PaginaInicialTelaView - Interface para gerenciar doadores e agendamentos.
-Cadastro de Usuário: CadastrarTelaView - Permite adicionar novos doadores.
-Remoção de Doador: RemoverDoadorTelaView - Remove doadores do sistema.
-Atualização de Doador: AtualizarDoadorTelaView - Atualiza informações de contato do doador.
-Agendamento de Doação: AgendarDoacaoTelaView - Permite agendar uma doação.
+
+Autenticação de Usuário: 🔒 LoginTelaView - Acesso seguro para os usuários.
+Menu Principal: 🏠 PaginaInicialTelaView - Gerenciamento intuitivo de doadores e agendamentos.
+Cadastro de Usuário: ➕ CadastrarTelaView - Adição rápida de novos doadores.
+Remoção de Doador: 🗑️ RemoverDoadorTelaView - Exclusão simples de doadores do sistema.
+Atualização de Doador: 🔄 AtualizarDoadorTelaView - Atualização fácil das informações de contato dos doadores.
+Agendamento de Doação: 🗓️ AgendarDoacaoTelaView - Agendamento prático e eficiente de doações.
 Banco de Dados
 O Projeto Sangue Solidário utiliza um banco de dados MySQL para armazenar informações vitais. Abaixo estão as tabelas criadas para o projeto:
 
 Tabela de Doadores
-A tabela usuarios armazena informações sobre os doadores, incluindo nome, data de nascimento, gênero, estado civil, tipo sanguíneo, telefone e email.
 
-Para sua criação utiliza as seguintes queries: 
+Descrição: Armazena informações sobre os doadores, incluindo nome, data de nascimento, gênero, estado civil, tipo sanguíneo, telefone e email.
+Tabela de Agendamento
+
+Descrição: Registra os agendamentos de doações, com informações sobre o hospital, data, hora, observações e o ID do doador associado.
+Tabela de Usuários Administradores
+
+Descrição: Armazena informações sobre os usuários administradores do sistema, incluindo nome, login e senha.
+
+Conclusão
+
+O Projeto Sangue Solidário é uma iniciativa apaixonante que visa simplificar e incentivar a doação de sangue, conectando de forma eficiente doadores e hospitais. Com um sistema moderno de cadastro e agendamento online, o aplicativo contribui significativamente para salvar vidas e promover a solidariedade em nossa sociedade. Junte-se a nós nessa nobre causa! 🩸💉👩‍⚕️
+
+Para sua criação utiliza as seguintes queries:
+
 
 CREATE TABLE tb_doadores (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -27,6 +43,7 @@ CREATE TABLE tb_doadores (
     telefone VARCHAR(20) NOT NULL,
     email VARCHAR(255) NOT NULL
 );
+
 INSERT INTO tb_doadores (nome, data_nascimento, tipo_sanguineo, estado_civil, genero, telefone, email)
 VALUES
     ('Vinicius Reis', '1999-05-12', 'B', 'Casado(a)', 'F', '11945678901', 'joana@example.com'),
@@ -56,7 +73,6 @@ VALUES
 Tabela de Agendamento
 A tabela tb_agendamento registra os agendamentos de doações, com informações sobre o hospital, data, hora, observações e o ID do doador associado.
 
-Para sua criação utiliza as seguintes queries: 
 
 CREATE TABLE tb_agendamento (
    id_agendamento int NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -90,12 +106,8 @@ INSERT INTO tb_agendamento (hospital, data_doacao, hora_doacao, observacao, doad
 ('Cleveland Clinic', '2024-06-19', '16:30', 'Está com baixo peso', 19),
 ('The Mount Sinai Hospital', '2024-06-20', '17:30', 'Está em jejum prolongado', 20);
 
-
-
 Tabela de Usuários Administradores
 A tabela usuario_admin armazena informações sobre os usuários administradores do sistema, incluindo nome, login e senha.
-
-Para sua criação utiliza as seguintes queries: 
 
 CREATE TABLE usuario_admin (
     id INT AUTO_INCREMENT PRIMARY KEY,
