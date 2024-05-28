@@ -124,5 +124,3 @@ INSERT INTO usuario_admin (nome, login, senha) VALUES
 ('Vinicius Reis Miranda', 'admin', 'admin'),
 ('Osama bin Laden', 'osama', 'cabum');
 
-  Conclusão
-O Projeto Sangue Solidário é uma iniciativa que visa facilitar o processo de doação de sangue, conectando doadores e hospitais de forma eficiente e segura. Com um sistema de cadastro e agendamento online, o aplicativo contribui para salvar vidas e promover a solidariedade na sociedade.
