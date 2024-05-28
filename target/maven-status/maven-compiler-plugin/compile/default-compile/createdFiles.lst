@@ -19,6 +19,7 @@ VIEW\RemoverDoadorTelaView$1.class
 VIEW\AgendarDoacaoTelaView$5.class
 VIEW\LoginTelaView$2.class
 VIEW\PaginaInicialTelaView$6.class
+MODEL\Agendamento.class
 VIEW\AgendarDoacaoTelaView$2.class
 CONTROLER\AtualizarControler.class
 VIEW\AgendarDoacaoTelaView.class
