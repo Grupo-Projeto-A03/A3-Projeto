@@ -7,7 +7,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
-import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 public class AgendarHelper {
@@ -57,7 +56,7 @@ public class AgendarHelper {
             return ps.executeUpdate();
 
         } catch (Exception erro) {
-            JOptionPane.showMessageDialog(null, erro);
+
         }
         return 0;
     }

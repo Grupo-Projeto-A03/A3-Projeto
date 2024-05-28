@@ -316,15 +316,11 @@ public class AgendarDoacaoTelaView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-AgendarControler objagendarcontroler = new AgendarControler(this);
         try {
+            AgendarControler objagendarcontroler = new AgendarControler(this);
             objagendarcontroler.atualizarAgendamento();
-        } catch (Exception ex) {
-            Logger.getLogger(AgendarDoacaoTelaView.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
             objagendarcontroler.atualizarTabela();
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             Logger.getLogger(AgendarDoacaoTelaView.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
