@@ -2,7 +2,7 @@ Projeto Sangue Solidário 🩸
 
 Resumo do Projeto
 
-o Projeto Sangue Solidário é um aplicativo revolucionário que une doadores de sangue a hospitais cadastrados, simplificando o processo de agendamento de doações. 
+O Projeto Sangue Solidário é um aplicativo revolucionário que une doadores de sangue a hospitais cadastrados, simplificando o processo de agendamento de doações. 
 Administrado por usuários autorizados, o sistema permite o cadastro de novos doadores e a marcação de doações online.
 
 Funcionalidades Principais
@@ -14,24 +14,28 @@ Remoção de Doador: 🗑️ RemoverDoadorTelaView - Exclusão simples de doador
 Atualização de Doador: 🔄 AtualizarDoadorTelaView - Atualização fácil das informações de contato dos doadores.
 Agendamento de Doação: 🗓️ AgendarDoacaoTelaView - Agendamento prático e eficiente de doações.
 Banco de Dados
+
 O Projeto Sangue Solidário utiliza um banco de dados MySQL para armazenar informações vitais. Abaixo estão as tabelas criadas para o projeto:
 
 Tabela de Doadores
 
 Descrição: Armazena informações sobre os doadores, incluindo nome, data de nascimento, gênero, estado civil, tipo sanguíneo, telefone e email.
+
 Tabela de Agendamento
 
 Descrição: Registra os agendamentos de doações, com informações sobre o hospital, data, hora, observações e o ID do doador associado.
+
 Tabela de Usuários Administradores
 
 Descrição: Armazena informações sobre os usuários administradores do sistema, incluindo nome, login e senha.
 
 Conclusão
 
-O Projeto Sangue Solidário é uma iniciativa apaixonante que visa simplificar e incentivar a doação de sangue, conectando de forma eficiente doadores e hospitais. Com um sistema moderno de cadastro e agendamento online, o aplicativo contribui significativamente para salvar vidas e promover a solidariedade em nossa sociedade. Junte-se a nós nessa nobre causa! 🩸💉👩‍⚕️
+O Projeto Sangue Solidário é uma iniciativa apaixonante que visa simplificar e incentivar a doação de sangue, conectando de forma eficiente doadores e hospitais.
+Com um sistema moderno de cadastro e agendamento online, o aplicativo contribui significativamente para salvar vidas e promover a solidariedade em nossa sociedade. Junte-se a nós nessa nobre causa! 🩸💉👩‍⚕️
+
 
 Para sua criação utiliza as seguintes queries:
-
 
 CREATE TABLE tb_doadores (
     id INT PRIMARY KEY AUTO_INCREMENT,
