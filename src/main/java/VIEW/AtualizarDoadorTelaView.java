@@ -35,21 +35,29 @@ public class AtualizarDoadorTelaView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtVoltar = new javax.swing.JButton();
         txtAtualizar = new javax.swing.JButton();
+        txtVoltar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        txtEmail = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         txtID = new javax.swing.JTextField();
         txtTelefone = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
+        txtEmail = new javax.swing.JTextField();
+        fundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtAtualizar.setBackground(new java.awt.Color(255, 0, 0));
+        txtAtualizar.setForeground(new java.awt.Color(255, 255, 255));
+        txtAtualizar.setText("Confirmar");
+        txtAtualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAtualizarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtAtualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, 80, -1));
 
         txtVoltar.setBackground(new java.awt.Color(255, 0, 0));
         txtVoltar.setForeground(new java.awt.Color(255, 255, 255));
@@ -59,42 +67,49 @@ public class AtualizarDoadorTelaView extends javax.swing.JFrame {
                 txtVoltarActionPerformed(evt);
             }
         });
-        getContentPane().add(txtVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 80, -1));
+        getContentPane().add(txtVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 80, -1));
 
-        txtAtualizar.setBackground(new java.awt.Color(255, 0, 0));
-        txtAtualizar.setForeground(new java.awt.Color(255, 255, 255));
-        txtAtualizar.setText("Atualizar");
-        txtAtualizar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtAtualizarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtAtualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, -1, -1));
-
+        jLabel1.setFont(new java.awt.Font("Sitka Text", 3, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Atualizar");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, 156, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 220, -1));
 
-        jLabel2.setText("   ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, 300, 20));
-        getContentPane().add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 310, -1));
-
+        jLabel3.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Email:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 60, 20));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 130, 30));
 
-        jLabel4.setText("Reforçamos que somente informações relacionadas ao contato do doador ");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 412, -1));
-
+        jLabel5.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Informe o ID do doador que deseja atualizar:");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 89, 237, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 400, -1));
 
+        jLabel6.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Telefone:");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 60, 20));
-        getContentPane().add(txtID, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, 63, 30));
-        getContentPane().add(txtTelefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 170, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 150, 30));
 
-        jLabel7.setText("podem ser alteradas.");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 120, -1));
+        txtID.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        txtID.setForeground(new java.awt.Color(255, 0, 0));
+        getContentPane().add(txtID, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 100, 63, -1));
+
+        txtTelefone.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        txtTelefone.setForeground(new java.awt.Color(255, 0, 0));
+        getContentPane().add(txtTelefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 170, -1));
+
+        txtEmail.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        txtEmail.setForeground(new java.awt.Color(255, 0, 0));
+        txtEmail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEmailActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 300, -1));
+
+        fundo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/fundo doador.jpg"))); // NOI18N
+        getContentPane().add(fundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, 0, -1, 330));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -107,7 +122,7 @@ public class AtualizarDoadorTelaView extends javax.swing.JFrame {
     }//GEN-LAST:event_txtVoltarActionPerformed
 
     private void txtAtualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAtualizarActionPerformed
-        AtualizarControler objatulizarcontroler = new AtualizarControler(this);
+       AtualizarControler objatulizarcontroler = new AtualizarControler(this);
         try {
             objatulizarcontroler.atualizarControler();
         } catch (SQLException ex) {
@@ -118,6 +133,26 @@ public class AtualizarDoadorTelaView extends javax.swing.JFrame {
         getTxtTelefone().setText("");
     }//GEN-LAST:event_txtAtualizarActionPerformed
 
+    private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEmailActionPerformed
+
+    public JButton getTxtAtualizar() {
+        return txtAtualizar;
+    }
+
+    public void setTxtAtualizar(JButton txtAtualizar) {
+        this.txtAtualizar = txtAtualizar;
+    }
+
+    public JTextField getTxtEmail() {
+        return txtEmail;
+    }
+
+    public void setTxtEmail(JTextField txtEmail) {
+        this.txtEmail = txtEmail;
+    }
+
     public JLabel getjLabel1() {
         return jLabel1;
     }
@@ -126,28 +161,12 @@ public class AtualizarDoadorTelaView extends javax.swing.JFrame {
         this.jLabel1 = jLabel1;
     }
 
-    public JLabel getjLabel2() {
-        return jLabel2;
-    }
-
-    public void setjLabel2(JLabel jLabel2) {
-        this.jLabel2 = jLabel2;
-    }
-
     public JLabel getjLabel3() {
         return jLabel3;
     }
 
     public void setjLabel3(JLabel jLabel3) {
         this.jLabel3 = jLabel3;
-    }
-
-    public JLabel getjLabel4() {
-        return jLabel4;
-    }
-
-    public void setjLabel4(JLabel jLabel4) {
-        this.jLabel4 = jLabel4;
     }
 
     public JLabel getjLabel5() {
@@ -166,29 +185,8 @@ public class AtualizarDoadorTelaView extends javax.swing.JFrame {
         this.jLabel6 = jLabel6;
     }
 
-    public JLabel getjLabel7() {
-        return jLabel7;
-    }
 
-    public void setjLabel7(JLabel jLabel7) {
-        this.jLabel7 = jLabel7;
-    }
 
-    public JButton getTxtAtualizar() {
-        return txtAtualizar;
-    }
-
-    public void setTxtAtualizar(JButton txtAtualizar) {
-        this.txtAtualizar = txtAtualizar;
-    }
-
-    public JTextField getTxtEmail() {
-        return txtEmail;
-    }
-
-    public void setTxtEmail(JTextField txtEmail) {
-        this.txtEmail = txtEmail;
-    }
 
     public JTextField getTxtID() {
         return txtID;
@@ -250,13 +248,11 @@ public class AtualizarDoadorTelaView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel fundo;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JButton txtAtualizar;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtID;

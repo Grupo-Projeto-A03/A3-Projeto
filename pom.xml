@@ -12,6 +12,12 @@
         <exec.mainClass>com.mycompany.sistemaacademico.SistemaAcademico</exec.mainClass>
     </properties>
     <dependencies> 
+        <dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-email</artifactId>
+    <version>1.6.0</version>
+            <type>jar</type>
+        </dependency>
         <dependency> 
             <groupId>mysql</groupId> 
             <artifactId>mysql-connector-java</artifactId> 

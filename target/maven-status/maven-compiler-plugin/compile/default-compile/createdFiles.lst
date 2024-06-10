@@ -7,6 +7,7 @@ VIEW\LoginTelaView$3.class
 VIEW\PaginaInicialTelaView$2.class
 VIEW\AgendarDoacaoTelaView$3.class
 VIEW\AgendarDoacaoTelaView$6.class
+VIEW\AtualizarDoadorTelaView$4.class
 MODEL\Pessoa.class
 VIEW\PaginaInicialTelaView$5.class
 CONTROLER\Helper\LoginHelper.class

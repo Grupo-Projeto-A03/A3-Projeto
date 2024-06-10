@@ -8,6 +8,8 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import javax.swing.table.DefaultTableModel;
+import org.apache.commons.mail.DefaultAuthenticator;
+import org.apache.commons.mail.SimpleEmail;
 
 public class AgendarHelper {
 
@@ -33,6 +35,7 @@ public class AgendarHelper {
                     rowData[i - 1] = rs.getString(i);
                 }
                 model.addRow(rowData);
+
             }
         }
     }
@@ -59,5 +62,36 @@ public class AgendarHelper {
 
         }
         return 0;
+    }
+
+    public void enviarEnviarEmail() {
+
+        String emailDoador = helper.getTxtEmail().getText();
+
+        if (emailDoador != null) {
+
+        String meuEmail = "vini.reis.miranda@gmail.com";
+            String minhaSenha = "gvxr heaf udcc peuh";
+            SimpleEmail email = new SimpleEmail();
+        String hospital = (String) helper.getListaHospital().getSelectedItem();
+        String data = helper.getTxtData().getText();
+        String hora = helper.getTxtHora().getText();
+
+        email.setHostName("smtp.gmail.com");
+        email.setSmtpPort(465);
+        email.setAuthenticator(new DefaultAuthenticator(meuEmail, minhaSenha));
+        email.setSSLOnConnect(true);
+
+        try {
+            email.setFrom(meuEmail);
+            email.setSubject("Confirmação de Agendamento - Projeto Sangue Solidario");
+            email.setMsg("Olá, Doador" + "! \n\nTudo bem? Esperamos que sim.\n\nEstamos passando para te avisar que seu agendamento está confirmado. Segue informações abaixo:\n\nHospital: " + hospital + "\nData e hora: " + data + " " + hora + "\n\nObrigado por essa boa ação!\n\nUm pequeno gesto, uma grande diferença. Doe sangue, doe vida!\n\nAtenciosamente,\nProjeto Sangue Solidário");
+            email.addTo(emailDoador);
+            email.send();
+        } catch (Exception e) {
+            e.printStackTrace();
+            }
+        } else {
+    }
     }
 }

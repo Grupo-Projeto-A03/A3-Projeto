@@ -40,6 +40,14 @@ public class AgendarDoacaoTelaView extends javax.swing.JFrame {
         return fundo;
     }
 
+    public JTextField getTxtEmail() {
+        return txtEmail;
+    }
+
+    public void setTxtEmail(JTextField txtEmail) {
+        this.txtEmail = txtEmail;
+    }
+
     public void setFundo(JLabel fundo) {
         this.fundo = fundo;
     }
@@ -195,6 +203,8 @@ public class AgendarDoacaoTelaView extends javax.swing.JFrame {
         listaHospital = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         tableAgendamento = new javax.swing.JTable();
+        jLabel8 = new javax.swing.JLabel();
+        txtEmail = new javax.swing.JTextField();
         fundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -249,7 +259,7 @@ public class AgendarDoacaoTelaView extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 70, -1));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 550, 70, -1));
 
         jLabel6.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 0, 0));
@@ -294,7 +304,13 @@ public class AgendarDoacaoTelaView extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tableAgendamento);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 311, 770, 200));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 770, 200));
+
+        jLabel8.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel8.setText("Email:");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
+        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 280, 300, 30));
 
         fundo.setForeground(new java.awt.Color(255, 0, 0));
         fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tela2.jpg"))); // NOI18N
@@ -389,11 +405,13 @@ public class AgendarDoacaoTelaView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JComboBox<String> listaHospital;
     private javax.swing.JTable tableAgendamento;
     private javax.swing.JTextField txtData;
+    private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtHora;
     private javax.swing.JTextField txtID;
     private java.awt.TextArea txtareaObservacao;

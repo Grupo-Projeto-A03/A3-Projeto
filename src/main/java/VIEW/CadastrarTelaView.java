@@ -206,9 +206,8 @@ public class CadastrarTelaView extends javax.swing.JFrame {
         lblId.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(lblId, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 250, 80));
 
-        txtNascimento.setFont(new java.awt.Font("Sitka Text", 3, 14)); // NOI18N
+        txtNascimento.setFont(new java.awt.Font("Sitka Text", 1, 18)); // NOI18N
         txtNascimento.setForeground(new java.awt.Color(255, 0, 0));
-        txtNascimento.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         getContentPane().add(txtNascimento, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 140, 30));
 
         lblId1.setFont(new java.awt.Font("Sitka Text", 3, 24)); // NOI18N
@@ -223,9 +222,8 @@ public class CadastrarTelaView extends javax.swing.JFrame {
         lblId2.setText("Genero:");
         getContentPane().add(lblId2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
 
-        txtGenero.setFont(new java.awt.Font("Sitka Text", 3, 14)); // NOI18N
+        txtGenero.setFont(new java.awt.Font("Sitka Text", 1, 18)); // NOI18N
         txtGenero.setForeground(new java.awt.Color(255, 0, 0));
-        txtGenero.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         getContentPane().add(txtGenero, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 40, -1));
 
         lblId3.setFont(new java.awt.Font("Sitka Text", 3, 24)); // NOI18N
@@ -234,9 +232,8 @@ public class CadastrarTelaView extends javax.swing.JFrame {
         lblId3.setText("Estado Civil:");
         getContentPane().add(lblId3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
 
-        txtEstadoCivil.setFont(new java.awt.Font("Sitka Text", 3, 14)); // NOI18N
+        txtEstadoCivil.setFont(new java.awt.Font("Sitka Text", 1, 18)); // NOI18N
         txtEstadoCivil.setForeground(new java.awt.Color(255, 0, 0));
-        txtEstadoCivil.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         getContentPane().add(txtEstadoCivil, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 150, -1));
 
         lblId4.setFont(new java.awt.Font("Sitka Text", 3, 24)); // NOI18N
@@ -245,9 +242,8 @@ public class CadastrarTelaView extends javax.swing.JFrame {
         lblId4.setText("Email:");
         getContentPane().add(lblId4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, -1, -1));
 
-        txtEmail.setFont(new java.awt.Font("Sitka Text", 3, 14)); // NOI18N
+        txtEmail.setFont(new java.awt.Font("Sitka Text", 1, 18)); // NOI18N
         txtEmail.setForeground(new java.awt.Color(255, 0, 0));
-        txtEmail.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtEmailActionPerformed(evt);
@@ -261,9 +257,8 @@ public class CadastrarTelaView extends javax.swing.JFrame {
         lblId5.setText("Telefone:");
         getContentPane().add(lblId5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 240, -1, -1));
 
-        txtTelefone.setFont(new java.awt.Font("Sitka Text", 3, 14)); // NOI18N
+        txtTelefone.setFont(new java.awt.Font("Sitka Text", 1, 18)); // NOI18N
         txtTelefone.setForeground(new java.awt.Color(255, 0, 0));
-        txtTelefone.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         getContentPane().add(txtTelefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 240, 230, -1));
 
         Nome.setFont(new java.awt.Font("Sitka Text", 3, 24)); // NOI18N
@@ -272,9 +267,8 @@ public class CadastrarTelaView extends javax.swing.JFrame {
         Nome.setText("Nome Completo:");
         getContentPane().add(Nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
 
-        txtNomeCompleto.setFont(new java.awt.Font("Sitka Text", 3, 14)); // NOI18N
+        txtNomeCompleto.setFont(new java.awt.Font("Sitka Text", 1, 18)); // NOI18N
         txtNomeCompleto.setForeground(new java.awt.Color(255, 0, 0));
-        txtNomeCompleto.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         getContentPane().add(txtNomeCompleto, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, 510, -1));
 
         lblId6.setFont(new java.awt.Font("Sitka Text", 3, 24)); // NOI18N
@@ -283,9 +277,8 @@ public class CadastrarTelaView extends javax.swing.JFrame {
         lblId6.setText("Tipo Sanguineo:");
         getContentPane().add(lblId6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 140, -1, -1));
 
-        txtSangue.setFont(new java.awt.Font("Sitka Text", 3, 14)); // NOI18N
+        txtSangue.setFont(new java.awt.Font("Sitka Text", 1, 18)); // NOI18N
         txtSangue.setForeground(new java.awt.Color(255, 0, 0));
-        txtSangue.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         getContentPane().add(txtSangue, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 140, 70, -1));
 
         Cadastrar.setBackground(new java.awt.Color(255, 255, 255));

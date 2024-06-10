@@ -30,7 +30,7 @@ public class RemoverHelper {
             ps.setString(1, id);
             return ps.executeUpdate(); // Retorna o número de linhas afetadas
         } catch (SQLException error) {
-            JOptionPane.showMessageDialog(null, "Erro ao excluir doador: " + error.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao excluir doador, pois o ID não existe ou há um agendamento para esse doador.");
             throw error; // Re-throw the exception to be handled by the caller
         }
     }
